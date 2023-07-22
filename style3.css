@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,600&display=swap");
+body {
+    background-image: url("background.jpg");
+    }
+  
+    .header {
+      font-family: "Poppins", sans-serif;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      padding: 2rem 9%;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+    }
+    .header .logo {
+      margin-right: auto;
+      font-size: 1.3rem;
+      color: #10221b;
+      font-weight: bolder;
+      text-decoration: none;
+    }
+    .header .logo i {
+      color: #4d9960;
+    }
+    
+    .navbar a {
+      margin-left: 1rem;
+      font-size: 1.3rem;
+      color: #000000;
+      text-decoration: none;
+    }
+    .navbar a:hover {
+      color: #4d9960;
+    }
+    .navbar #nav-close {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #000000;
+      display: none;
+    }
+    .icons a,
+    .icons div {
+      font-size: 1.5rem;
+      margin-left: 2rem;
+      cursor: pointer;
+      color: #060f04;
+    }
+    .icons a:hover,
+    .icons div:hover {
+      color: #4d9960;
+    }
+    #menu-btn {
+      display: none;
+    }
+    
+    .community h1{
+      padding: 0;
+      position: relative;
+      margin-top: 7%;
+    }
+    
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #4CAF50;
+      
+  }
+  p {
+    text-indent: 50px;
+    letter-spacing: 3px;
+    font-size: large;
+    text-align: center;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .header #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: fixed;
+      top: 0;
+      left: -110%;
+      background: rgb(255, 255, 255);
+      z-index: 10000;
+      width: 23rem;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .header .navbar.active {
+      left: 0;
+      box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    }
+    .header .navbar a {
+      margin: 0.5rem;
+      font-size: 1.6rem;
+    }
+    .header .navbar #nav-close {
+      display: block;
+      position: absolute;
+      top: 0.5rem;
+      right: 1rem;
+    }
+  }

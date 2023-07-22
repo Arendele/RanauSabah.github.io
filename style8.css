@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,600&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+.header .logo {
+    margin-right: auto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bolder;
+}
+  .header .logo i {
+    color: #4d9960;
+}
+.navbar a{
+ margin-left: 1.5rem;
+  font-size: 1.2rem;
+  color: #f4fcf9;
+}
+.navbar a:hover{
+    color: #4d9960;
+}
+.navbar #nav-close {
+    font-size: 2.5rem;
+    cursor: pointer;
+  color: #f4fcf9;
+    display: none;
+  }
+  .icons a,
+.icons div {
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+.icons a:hover,
+.icons div:hover {
+  color: #4d9960;
+}
+#menu-btn {
+  display: none;
+}
+.team{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(images/Mount\ Kinabalu2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.team-content{
+    width: 80%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.team-content img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.center h1{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+.box{
+    padding: 10px;
+    border: 1px solid#202020;
+    border-radius: 9px;
+    transition: all .38s ease;
+}
+.box h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 8px;
+}
+.iconic i{
+    display: inline-block;
+    color: white;
+    font-size: 17px;
+    margin: 0 8px;
+    transition: all .38s ease;
+}
+.iconic i:hover{
+    transform: scale(1.2);
+    color: cornflowerblue;
+}
+.box:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: black;
+  }
+  
+  .menu .box-container .box img{
+    width: 100rem;
+    height: auto;
+    align-items: center;
+  }
+  
+  .menu .box-container .box h3{
+    color: #3a6320;
+    font-size: 2rem;
+    padding: 1rem 0;
+    font-weight: bolder;
+  }
+  
+  .menu .box-container .box p{
+    color: #3a6320;
+    font-size: 1.8rem;
+    padding: .5rem 0;
+    text-align:center;
+    font-weight:normal;
+  }
+  
+
+@media(max-width: 1240px){
+    .team{
+        width: 100%;
+        height: auto;
+        padding: 90px 2%;
+    }
+    .center h1{
+        font-size: 3.2rem;
+    }
+}
+@media (max-width: 768px) {
+    .header #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: fixed;
+      top: 0;
+      left: -110%;
+      background: #000000;
+      z-index: 10000;
+      width: 23rem;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .header .navbar.active {
+      left: 0;
+      box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    }
+    .header .navbar a {
+      margin: 0.5rem;
+      font-size: 1.6rem;
+    }
+    .header .navbar #nav-close {
+      display: block;
+      position: absolute;
+      top: 0.5rem;
+      right: 1rem;
+    }
+}  

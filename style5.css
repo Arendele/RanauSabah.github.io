@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,600&display=swap");
+*{margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+  }
+  .header .logo {
+    margin-right: auto;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bolder;
+  }
+  .header .logo i {
+    color: green;
+  }
+  
+  .navbar a {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+  }
+  .navbar a:hover {
+    color: #00360f;
+  }
+  .navbar #nav-close {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: white;
+    display: none;
+  }
+  .icons a,
+  .icons div {
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    color: black;
+  }
+  .icons a:hover,
+  .icons div:hover {
+    color: #4d9960;
+  }
+  #menu-btn {
+    display: none;
+  }
+
+.container .heading{
+    text-align: center;  
+    padding-bottom: 15px;
+    color: white;
+    text-shadow: 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 40px;
+    margin-top: 7%;
+}
+.container .cover{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+.container .cover .box{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #00360f;
+    text-align: center;
+    padding: 30px 20px;
+      
+}
+.container .cover .box img{
+    height: 150px;
+    width: 200px;
+}
+
+.container .cover .box h2{
+    color: white;
+}
+.container .cover .box p{
+    color: white;
+}
+
+.container .cover .box:hover{
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+}
+
+
+@media (max-width:768px){
+    .container{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: fixed;
+      top: 0;
+      left: -110%;
+      background: black;
+      z-index: 10000;
+      width: 28rem;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .header .navbar.active {
+      left: 0;
+      box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    }
+    .header .navbar a {
+      margin: 1rem;
+      font-size: 1.5rem;
+    }
+    .header .navbar #nav-close {
+      display: block;
+      position: absolute;
+      top: 0.5rem;
+      right: 1rem;
+    }
+  }
+   
+    body{
+      background-color: #4d9960;
+    }
